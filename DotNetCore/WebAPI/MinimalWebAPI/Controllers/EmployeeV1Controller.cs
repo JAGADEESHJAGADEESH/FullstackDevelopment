@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotNetCoreWebAPI.Controllers
+namespace MinimalWebAPI.Controllers
 {
     [ApiController]
     [Route("api/v1/employees")]

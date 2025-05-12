@@ -22,6 +22,9 @@ builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//caching
+builder.Services.AddMemoryCache();
+
 builder.Services.AddHttpClient();
 builder.Services.AddSingleton<HttpClient>();
 
@@ -51,7 +54,6 @@ builder.Services.AddApiVersioning(options =>
     options.DefaultApiVersion = new ApiVersion(1, 0);
     options.AssumeDefaultVersionWhenUnspecified = true;
     options.ReportApiVersions = true;
-    options.ApiVersionReader = new HeaderApiVersionReader("x-api-version");
 });
 
 builder.Services.AddValidatorsFromAssemblyContaining<LoginModelValidator>();

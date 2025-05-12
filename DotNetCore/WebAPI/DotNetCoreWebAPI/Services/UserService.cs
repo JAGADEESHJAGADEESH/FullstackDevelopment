@@ -33,6 +33,17 @@ namespace DotNetCoreWebAPI.Services
             };
             return _context.Users.ToList();
         }
+
+        public (int, string) GetUserDetails()
+        {
+            var user = _context.Users.FirstOrDefault();
+            if (user != null)
+            {
+                return (user.Id, user.Username);
+            }
+            return (0, string.Empty);
+        }
     }
+   
     
 }

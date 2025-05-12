@@ -26,5 +26,13 @@ namespace C_Basics.ExtentionsMethods
             else
                 return new string("input data is less than 0");
         }
+        public static void M4(this Geek geek)
+        {
+            Console.WriteLine("M4 method from extention class");
+        }
+        public static void M5(this Geek geek)
+        {
+            Console.WriteLine("M5 method from extention class");
+        }
     }
 }
