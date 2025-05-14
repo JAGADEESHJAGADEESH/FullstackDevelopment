@@ -4,7 +4,9 @@ using C_Basics.AnnonymousMethods;
 using C_Basics.ExtentionsMethods;
 using C_Basics.OOPS.Abstraction;
 using C_Basics.Partial;
+using C_Basics.Reflection;
 using System;
+using System.Reflection;
 using System.Xml.Linq;
 using static C_Basics.Delegates;
 
@@ -136,5 +138,19 @@ var subtraction = del_obj2(100, 60);
 
 // Call the method to demonstrate anonymous features
 AnnonymousClass.DemonstrateAnonymousFeatures();
+
+#endregion
+
+#region Reflection
+
+//Reflection_Metadata.ReflectionMetadata();
+
+
+var unsafeExample = new ReflectionExample();
+
+var unsafeReflectionMethod = typeof(ReflectionExample).GetProperty("PrivateProperty", BindingFlags.Instance | BindingFlags.NonPublic);
+
+Console.WriteLine(unsafeReflectionMethod); // outputs Unsafe Name
+
 
 #endregion
