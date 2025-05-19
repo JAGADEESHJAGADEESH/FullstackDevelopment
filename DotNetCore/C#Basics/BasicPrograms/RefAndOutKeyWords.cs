@@ -1,8 +1,14 @@
-﻿namespace C_Basics
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace C_Basics.BasicPrograms
 {
-    public class CSharpBasics
+    public class RefAndOutKeyWords
     {
-        public CSharpBasics()
+        public RefAndOutKeyWords()
         {
             int G;
 

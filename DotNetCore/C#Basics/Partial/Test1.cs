@@ -10,13 +10,10 @@ namespace C_Basics.Partial
     {
         public Test()
         {
+            Console.WriteLine("DoSomeThing() method is declared as partial in class is Test1 class, meaning it can be implemented in another partial class with same name Test but idle class name is Test2");
+            Console.WriteLine($"This class name is {this.GetType().Name}");
             DoSomeThing();
         }
         partial void DoSomeThing();
-
-        void DoSomeThing1()
-        {
-            Console.WriteLine("This is not implemented");
-        }
     }
 }

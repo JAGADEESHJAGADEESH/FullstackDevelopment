@@ -33,6 +33,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebAssemblyApp", "Dot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerApp", "DotNetCore\MudBlazor\BlazorServerApp\BlazorServerApp.csproj", "{EA806DD2-41B5-4EA3-8BE3-F092537F664E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ecommerce", "Ecommerce", "{AD68AD7A-EE08-431E-964A-5BAA3C4D1EA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService", "DotNetCore\Microservices\ECommerce\ProductService\ProductService.csproj", "{6C4D5772-7CE4-4868-8F19-DC3182F1639E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DBContext", "DotNetCore\Microservices\DBContext\DBContext.shproj", "{0783B2B9-88C5-4ADF-8F82-399C65B02C4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +79,10 @@ Global
 		{EA806DD2-41B5-4EA3-8BE3-F092537F664E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA806DD2-41B5-4EA3-8BE3-F092537F664E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA806DD2-41B5-4EA3-8BE3-F092537F664E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4D5772-7CE4-4868-8F19-DC3182F1639E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4D5772-7CE4-4868-8F19-DC3182F1639E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4D5772-7CE4-4868-8F19-DC3182F1639E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4D5772-7CE4-4868-8F19-DC3182F1639E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,8 +101,14 @@ Global
 		{4DA3EBD2-C9BB-4A5A-8F03-2F0DAE1D1931} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{95B5BAD4-5768-4630-BCDD-888031BBE136} = {4DA3EBD2-C9BB-4A5A-8F03-2F0DAE1D1931}
 		{EA806DD2-41B5-4EA3-8BE3-F092537F664E} = {4DA3EBD2-C9BB-4A5A-8F03-2F0DAE1D1931}
+		{AD68AD7A-EE08-431E-964A-5BAA3C4D1EA8} = {F43ABC00-0F93-4D6F-B58D-680D04C39280}
+		{6C4D5772-7CE4-4868-8F19-DC3182F1639E} = {AD68AD7A-EE08-431E-964A-5BAA3C4D1EA8}
+		{0783B2B9-88C5-4ADF-8F82-399C65B02C4A} = {F43ABC00-0F93-4D6F-B58D-680D04C39280}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E9F54952-23D7-4CE4-9D78-1470E3941570}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DotNetCore\Microservices\DBContext\DBContext.projitems*{0783b2b9-88c5-4adf-8f82-399c65b02c4a}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

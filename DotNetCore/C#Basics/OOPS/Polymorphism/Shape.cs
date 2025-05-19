@@ -29,7 +29,7 @@ namespace C_Basics.OOPS.Polymorphism
 
         public void TestMethod()
         {
-            Console.WriteLine("Test Method");
+            Console.WriteLine("Test Method from shape");
         }
     }
 }

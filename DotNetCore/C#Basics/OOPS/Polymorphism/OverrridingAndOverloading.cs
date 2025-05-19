@@ -35,5 +35,10 @@ namespace C_Basics.OOPS.Polymorphism
         {
             Console.WriteLine("This is from base Shape class");
         }
+
+        public void TestMethod()
+        {
+            Console.WriteLine($"Test Method from from {this.GetType().Name}");
+        }
     }
 }

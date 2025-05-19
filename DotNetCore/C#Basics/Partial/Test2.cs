@@ -11,6 +11,8 @@ namespace C_Basics.Partial
       
         partial void DoSomeThing()
         {
+            
+            Console.WriteLine("This method is implemented in another file");
             Console.WriteLine("This is implemented");
         }
     }
